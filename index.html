@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- 🌟 LOGO -->
+<div class="logo">M</div>
+
+<!-- 📱 APP -->
+<div class="app">
+
+    <header>
+        <h1 class="title">Student Study Planner 📚</h1>
+    </header>
+
+    <!-- 📝 TASKS -->
+    <h2>Add Task 📝</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <!-- 🎯 GOALS -->
+    <h2>Daily Goals 🎯</h2>
+
+    <div class="goals">
+        <label>Study 2 hours <input type="checkbox" class="goal"></label>
+        <label>Revise notes <input type="checkbox" class="goal"></label>
+        <label>Practice MCQs <input type="checkbox" class="goal"></label>
+    </div>
+
+    <!-- 📊 GOAL PROGRESS -->
+    <h2>Goals Progress 📊</h2>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="goalProgressBar"></div>
+    </div>
+
+    <p id="goalText">0% Completed</p>
+
+    <!-- ⏱️ TIMER -->
+    <h2>Study Timer ⏱️</h2>
+    <p id="timer">25:00</p>
+
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    <!-- 💬 QUOTES -->
+    <h2>Motivation 💬</h2>
+    <p id="quote"></p>
+
+</div>
+
+<!-- 🏆 BADGE -->
+<div id="badgePopup" class="badge">
+    🏆 All Goals Completed!
+</div>
+
+<!-- 🎉 CONFETTI LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+<footer>
+    <p>Created by <b>Malishka Bhayje</b> 💻✨</p>
+</footer>
+</body>
+</html>
